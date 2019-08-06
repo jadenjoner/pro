@@ -8,3 +8,9 @@ This simple project creates the folders ~/Projects to store projects that the us
 - You can run projects using pro-<project name>
 
 In the future there will be github integration
+ ____  ____   ___  
+|  _ \|  _ \ / _ \ 
+| |_) | |_) | | | |
+|  __/|  _ <| |_| |
+|_|   |_| \_\\___/ 
+                   
