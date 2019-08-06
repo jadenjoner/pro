@@ -1,0 +1,17 @@
+How to install pro:
+
+change directory (cd) to where you installed this
+
+first install not root
+
+	./install
+
+then install with root,
+
+If you have sudo installed:
+
+	sudo ./install.sh
+
+If you do not have sudo installed:
+
+	su root ./install.sh

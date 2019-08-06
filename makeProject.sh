@@ -3,12 +3,12 @@
 echo
 cat ~/Lib/share/figlet-pro
 echo
-echo -n 'name: ' 
+echo -n 'project name: ' 
 read name
 echo
 ls --color=auto ~/Lib/projects/
 echo
-echo -n 'type: '
+echo -n 'project catagory: '
 read type
 echo
 echo -n makeing project..
