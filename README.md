@@ -1,7 +1,3 @@
- ____  ____   ___  
-|  _ \|  _ \ / _ \ 
-| |_) | |_) | | | |
-|  __/|  _ <| |_| |
-|_|   |_| \_\\___/ 
+# PRO - The Project Making Project
 
 Project Making Project
