@@ -18,7 +18,7 @@ mkdir ~/Lib/projects/$type/ 2> /dev/null
 mkdir ~/Projects/$name/
 ln -s ~/Projects/$name ~/Lib/projects/$type/$name
 cd ~/Projects/$name 
-ln -s ~/Projects/$name/bin/$name ~/Lib/bin/pro-$name
+ln -s ~/Projects/$name/ ~/Lib/bin/pro-$name
 #mkdir ~/Projects/$name/lib
 #mkdir ~/Projects/$name/bin
 mkdir `cat ~/Lib/format/project-folders`
