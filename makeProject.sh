@@ -8,23 +8,22 @@ read name
 echo
 ls --color=auto ~/Lib/projects/
 echo
-echo -n 'project catagory: '
+echo -n 'project catagorys (seperated by commas): '
 read type
 echo
 echo -n makeing project..
 
-export naml
+#export naml
 mkdir ~/Lib/projects/$type/ 2> /dev/null
 mkdir ~/Projects/$name/
-ln -s ~/Projects/$name ~/Lib/projects/$type/$name
+ln -s ~/Projects/$name ~/Lib/projects/{$type}/$name
 cd ~/Projects/$name 
-ln -s ~/Projects/$name/ ~/Lib/bin/pro-$name
 #mkdir ~/Projects/$name/lib
 #mkdir ~/Projects/$name/bin
-mkdir `cat ~/Lib/format/project-folders`
+#mkdir `cat ~/Lib/format/project-folders`
 #echo -e "#! /bin/bash\n# this is where your project starts\necho Hello, World!" > ~/Projects/$name/bin/$name
 ~/Lib/format/project-files $name
-chmod +x */* 2> /dev/null
+chmod +x bin/$name 2> /dev/null
 
 #echo -e "*$name Project*\n\nProject: $name\nAuthor: $USER\nDescription: what is this project about?" >  ~/Projects/$name/README
 
