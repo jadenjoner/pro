@@ -16,7 +16,7 @@ echo -n makeing project..
 #export naml
 mkdir ~/Lib/projects/$type/ 2> /dev/null
 mkdir ~/Projects/$name/
-ln -s ~/Projects/$name ~/Lib/projects/{$type}/$name
+ln -s ~/Projects/$name ~/Lib/projects/{$type,all}/$name
 cd ~/Projects/$name 
 #mkdir ~/Projects/$name/lib
 #mkdir ~/Projects/$name/bin
