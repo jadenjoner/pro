@@ -8,7 +8,8 @@ read name
 echo
 ls --color=auto ~/Lib/projects/
 echo
-echo -n 'project catagorys (seperated by commas): '
+#echo -n 'project catagorys (seperated by commas): '
+echo -n 'project catagory: '
 read type
 echo
 echo -n makeing project..
@@ -16,7 +17,7 @@ echo -n makeing project..
 #export naml
 mkdir ~/Lib/projects/$type/ 2> /dev/null
 mkdir ~/Projects/$name/
-ln -s ~/Projects/$name ~/Lib/projects/{$type,all}/$name
+ln -s ~/Projects/$name ~/Lib/projects/$type/$name 
 cd ~/Projects/$name 
 #mkdir ~/Projects/$name/lib
 #mkdir ~/Projects/$name/bin

@@ -1,6 +1,8 @@
 name=$1
+cd ~/Projects/$1
 
-echo -e "#! /bin/bash\n# This is the first file executed in your projet\necho Hello, World!" > bin/$name
+mkdir ~/Projects/$name/bin
+echo -e "#! /bin/bash\n# This is the first file executed in your projet\necho Hello, World!" > ~/Projects/$name/bin/$name
 
 echo -e "* $name Project *\n\nAuthor: $user\nTitle: $name\nVersion: 1.0\nDescription: " > README
 
