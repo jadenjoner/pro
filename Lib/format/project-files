@@ -1,6 +1,8 @@
 name=$1
 cd ~/Projects/$1
 
+mkdir ~/Projects/$name/share
+mkdir ~/Projects/$name/lib
 mkdir ~/Projects/$name/bin
 echo -e "#! /bin/bash\n# This is the first file executed in your projet\necho Hello, World!" > ~/Projects/$name/bin/$name
 

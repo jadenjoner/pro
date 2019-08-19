@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Project Input
 echo
 cat ~/Lib/share/figlet-pro
 echo
@@ -14,22 +15,13 @@ read type
 echo
 echo -n makeing project..
 
-#export naml
+# Make the Project
 mkdir ~/Lib/projects/$type/ 2> /dev/null
 mkdir ~/Projects/$name/
 ln -s ~/Projects/$name ~/Lib/projects/$type/$name 
 cd ~/Projects/$name 
-#mkdir ~/Projects/$name/lib
-#mkdir ~/Projects/$name/bin
-#mkdir `cat ~/Lib/format/project-folders`
-#echo -e "#! /bin/bash\n# this is where your project starts\necho Hello, World!" > ~/Projects/$name/bin/$name
 ~/Lib/format/project-files $name
 chmod +x bin/$name 2> /dev/null
-
-#echo -e "*$name Project*\n\nProject: $name\nAuthor: $USER\nDescription: what is this project about?" >  ~/Projects/$name/README
-
-#echo -e "* the first thing you need to do is make some to do's!\n* it's easy!" >  ~/Projects/$name/TODO
-#chmod +x ~/Lib/bin/*
 
 echo done
 echo
