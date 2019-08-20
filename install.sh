@@ -17,3 +17,7 @@ chmod +x ~/Lib/format/*
 echo done
 
 echo Now run root-install.sh as superuser
+echo
+echo $USER:~$ sudo ./root-install.sh
+echo '    or'
+echo root:~# ./root-install.sh
